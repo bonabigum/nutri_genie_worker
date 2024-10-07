@@ -115,7 +115,25 @@ else:
         else:
             priced_ingredients_str = "No prices found."
 
-        recipe_details = [ #for list
+        recipe_dict = { # create a dictionary for each recipe
+            'id': i,
+            'title': recipe['Name'],
+            'calories': recipe['Calories'],
+            'fat': recipe['FatContent'],
+            'saturatedfat': recipe['SaturatedFatContent'],
+            'cholesterol': recipe['CholesterolContent'],
+            'sodium': recipe['SodiumContent'],
+            'carbohydrates': recipe['CarbohydrateContent'],
+            'fiber': recipe['FiberContent'],
+            'sugar': recipe['SugarContent'],
+            'protein': recipe['ProteinContent'],
+            'image': recipe['Image'],
+            'ingredients': ingredients_str,
+            'instructions': recipe_instructions_str,
+            'price': priced_ingredients_str
+        }
+        recommendations.append(recipe_dict)
+        '''recipe_details = [ #for list
             i,
             recipe['Name'],
             recipe['Calories'],
@@ -133,7 +151,7 @@ else:
             #serving_size_str,
             priced_ingredients_str
         ]
-        recommendations.append(recipe_details)
+        recommendations.append(recipe_details)'''
 print(recommendations)
 with open('recommendations.json', 'w') as f:
     f.truncate(0)  #clears file
