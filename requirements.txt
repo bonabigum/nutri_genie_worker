@@ -1,0 +1,10 @@
+fastapi==0.112.2
+uvicorn==0.30.6
+pydantic==2.9.1
+pydantic_core==2.23.3
+pandas==2.2.2
+mysql-connector-python==8.0.33
+scikit-learn==1.5.1
+spacy==3.8.2
+numpy==2.0.2
+Flask==3.0.3
