@@ -1,0 +1,35 @@
+{
+    "allergyCategories": [
+      {"name": "Dairy", "items": [
+          "Cheese","Milk","Butter","Yogurt","Ice Cream"
+        ]
+      },{"name": "Crustaceans","items": [
+          "Crabs","Lobster","Shrimp","Prawns","Crayfish"
+        ]
+      },
+      {"name": "Nuts","items": [
+          "Peanuts","Tree Nuts","Almonds","Walnuts","Pecans"
+        ]
+      },
+      {"name": "Fish","items": [
+          "Salmon","Tuna","Cod","Swordfish","Anchovies"
+        ]
+      },
+      {"name": "Eggs","items": [
+          "Chicken Eggs","Duck Eggs","Quail Eggs"
+        ]
+      },
+      {"name": "Wheat","items": [
+          "Bread","Pasta","Cereals","Cakes","Cookies"
+        ]
+      },
+      {"name": "Soy", "items": [
+          "Soybeans","Tofu","Edamame","Miso","Soy Sauce"
+        ]
+      },
+      {"name": "Sesame","items": [
+          "Sesame Seeds","Sesame Oil","Tahini","Sesame Seeds","Sesame Oil","Tahini"
+        ]
+      }
+    ]
+  }
