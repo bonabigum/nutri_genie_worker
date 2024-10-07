@@ -163,8 +163,8 @@ print(recommendations)
 print(recommendations)'''
 
 def send_recommendations(recommendations):
-    payload = {'recommendations': recommendations}
-    response = requests.post('https://nutri-genie.onrender.com/recommendations/', json=payload)
+    payload = json.dumps(recommendations)
+    response = requests.post('https://nutri-genie.onrender.com/recommendations/', data=payload, headers={'Content-Type': 'application/json'})
     #response status code
     if response.status_code == 200:
         print("Recommendations sent successfully!")
