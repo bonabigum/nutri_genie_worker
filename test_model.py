@@ -57,7 +57,7 @@ prediction_input = PredictionIn( #prediction input
     user_info=user_info,
     #allergies=['chicken'],
     allergies = allergies1[:],
-    params=params(n_neighbors=1, return_distance=False) # gives how many recipes to recommend
+    params=params(n_neighbors=2, return_distance=False) # gives how many recipes to recommend
 )
 
 
