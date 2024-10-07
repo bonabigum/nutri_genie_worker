@@ -6,7 +6,7 @@ import pandas as pd
 from model import recommend,output_recommended_recipes,calculate_nutrition_needs #from model
 from typing import Dict, Optional
 
-dataset = pd.read_json('../Data/recipes.json')
+dataset = pd.read_json('recipes.json')
 dataset['RecipeIngredientParts'] = dataset['RecipeIngredientParts'].apply(lambda x: ', '.join(x))
  
 app = FastAPI()
