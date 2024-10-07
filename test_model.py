@@ -4,7 +4,7 @@ from main import UserInfo, PredictionIn, params
 import json
 import requests
 
-dataset = pd.read_json('Data/recipes.json')
+dataset = pd.read_json('recipes.json')
 dataset['RecipeIngredientParts'] = dataset['RecipeIngredientParts'].apply(lambda x: ', '.join(x))
 age1 = None
 gender1=None
