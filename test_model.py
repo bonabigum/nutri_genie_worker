@@ -153,9 +153,11 @@ else:
         ]
         recommendations.append(recipe_details)'''
 print(recommendations)
-with open('recommendations.json', 'w') as f:
+
+
+'''with open('recommendations.json', 'w') as f:
     f.truncate(0)  #clears file
-    json.dump(recommendations, f)
+    json.dump(recommendations, f)'''
 '''def get_recommendations():
     return recommendations
 print(recommendations)'''
