@@ -1,0 +1,147 @@
+[
+  {
+    "Name": "COMMERCIAL (IMPORTED) Premium (Yellow tagged)",
+    "Unit": "1kg",
+    "Price": 58
+  },
+  {
+    "Name": "COMMERCIAL (LOCAL) Premium (Yellow tagged)",
+    "Unit": "1kg",
+    "Price": 43
+  },
+  {
+    "Name": "COMMERCIAL (LOCAL) Regular Milled",
+    "Unit": "1kg",
+    "Price": 44
+  },
+  {
+    "Name": "COMMERCIAL (LOCAL) Special (Blue tagged)",
+    "Unit": "1kg",
+    "Price": 56
+  },
+  {
+    "Name": "COMMERCIAL (LOCAL) Well Milled",
+    "Unit": "1kg",
+    "Price": 47
+  },
+  {
+    "Name": "Pork Ham",
+    "Unit": "1kg",
+        "Price": 320
+      },
+      {
+        "Name": "Pork Belly",
+        "Unit": "1kg",
+        "Price": 320
+      },
+      {
+        "Name": "Whole Chicken",
+        "Unit": "1kg",
+        "Price": 200
+      },
+      {
+        "Name": "Cabbage",
+        "Unit": "1KG",
+        "Price": 80
+      },
+      {
+        "Name": "Carrots",
+        "Unit": "1kg",
+        "Price": 100
+      },
+      {
+        "Name": "Habitchuelas (Baguio Beans) Cabbage",
+        "Unit": "1kg",
+        "Price": 80
+      },
+      {
+        "Name": "Potato",
+        "Unit": "1kg",
+        "Price": 100
+      },
+      {
+        "Name": "Pechay (Baguio)",
+        "Unit": "1kg",
+        "Price": 240
+      },
+      {
+        "Name": "Chayote",
+        "Unit": "1kg",
+        "Price": 40
+      },
+      {
+        "Name": "Garlic",
+        "Unit": "1kg",
+        "Price": 140
+      },
+      {
+        "Name": "Ginger",
+        "Unit": "1kg",
+        "Price": 200
+      },
+      {
+        "Name": "Red Onion",
+        "Unit": "1kg",
+        "Price": 100
+      },
+      {
+        "Name": "White Onion",
+        "Unit": "1kg",
+        "Price": 140
+      },
+      {
+        "Name": "Chili (Labuyo)",
+        "Unit": "1kg",
+        "Price": 360
+      },
+      {
+        "Name": "Alumahan",
+        "Unit": "1kg",
+        "Price": 200
+      },
+      {
+        "Name": "Bangus",
+        "Unit": "1kg",
+        "Price": 180
+      },
+      {
+        "Name": "Galunggong(Local)",
+        "Unit": "1kg",
+        "Price": 160
+      },
+      {
+        "Name": "Tilapia",
+        "Unit": "1kg",
+        "Price": 150
+      },
+      {
+        "Name": "Calamansi",
+        "Unit": "1kg",
+        "Price": 40
+      },
+      {
+        "Name": "Banana (Lakatan)",
+        "Unit": "1kg",
+        "Price": 120
+      },
+      {
+        "Name": "Banana (Latundan)",
+        "Unit": "1kg",
+        "Price": 60
+      },
+      {
+        "Name": "Mangos",
+        "Unit": "1kg",
+        "Price": 300
+      },
+      {
+        "Name": "Chicken Egg (White, Medium)",
+        "Unit": "1 piece",
+        "Price": 9
+      },
+      {
+        "Name": "Papaya",
+        "Unit": "2 piece",
+        "Price": 30
+      }
+]
