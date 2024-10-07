@@ -94,14 +94,14 @@ else:
         ingredients_str = ', '.join(ingredients)
         recipe_instructions_str = ''.join(recipe['RecipeInstructions']).strip('[]')
 
-        '''query = ', '.join(ingredients)
+        query = ', '.join(ingredients)
         response = requests.get(api_url + query, headers={'X-Api-Key': api_key})
         if response.status_code == requests.codes.ok:
             data = response.json()
             total_serving_size = sum(item['serving_size_g'] for item in data['items'])
             serving_size_str = f'{total_serving_size:.2f}g'
         else:
-            serving_size_str = "Serving size computation not found"'''
+            serving_size_str = "Serving size computation not found"
         priced_ingredients = []
         for ingredient, quantity in zip(recipe_ingredients, recipe['Quantities']):
             found = False
@@ -130,6 +130,7 @@ else:
             'image': recipe['Image'],
             'ingredients': ingredients_str,
             'instructions': recipe_instructions_str,
+            'servingsize':serving_size_str,
             'price': priced_ingredients_str
         }
         recommendations.append(recipe_dict)
