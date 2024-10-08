@@ -156,19 +156,13 @@ else:
 print(recommendations)
 
 
-'''with open('recommendations.json', 'w') as f:
-    f.truncate(0)  #clears file
-    json.dump(recommendations, f)'''
-'''def get_recommendations():
-    return recommendations
-print(recommendations)'''
-
-def send_recommendations(recommendations):
-    payload = json.dumps(recommendations)
-    response = requests.post('https://nutri-genie.onrender.com/recommendations/', data=payload, headers={'Content-Type': 'application/json'})
-    #response status code
-    if response.status_code == 200:
-        print("Recommendations sent successfully!")
-    else:
-        print("Error sending recommendations:", response.text)
-send_recommendations(recommendations)
+def create_recipes_endpoint(recommendations):
+    url = "https://nutri-genie.onrender.com/recipes/"
+    headers = {"Content-Type": "application/json"}
+    try:
+        response = requests.post(url, headers=headers, json=recommendations)
+        response.raise_for_status()
+        print("Recipes created successfully:", response.json())
+    except requests.exceptions.RequestException as e:
+        print("Error creating recipes:", e)
+create_recipes_endpoint(recommendations)
