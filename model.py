@@ -53,7 +53,7 @@ def recommend(dataframe,_input,ingredients=[], allergies=[], params={'n_neighbor
         neigh = nn_predictor(prep_data)
         pipeline = build_pipeline(neigh, scaler, params)
         output = extracted_data.sample(n=5)
-        return output.sample(n=3, replace=False)
+        return output.sample(n=5, replace=False)
     else:
         return None
 
@@ -94,30 +94,30 @@ def calculate_nutrition_needs(user_info):
     fiber = 25
     sugar = 50
 
-    if user_info.health_goal == 'weight_loss':
+    if user_info.health_goal == 'lose weight':
         calories = bmr - 500
-    elif user_info.health_goal == 'gain_weight':
+    elif user_info.health_goal == 'gain weight':
         calories = bmr + 500
-    elif user_info.health_goal == 'maintain_weight':
+    elif user_info.health_goal == 'maintain weight':
         calories = bmr
-    elif user_info.health_goal == 'high_protein_diet':
+    elif user_info.health_goal == 'high-protein diet':
         protein_ratio = 0.4  # adjust protein ratio to 40%
         protein = (calories * protein_ratio) / 4
         fat = (calories * 0.2) / 9  # adjust fat ratio to 20%
         carbs = (calories * 0.4) / 4  # adjust carb ratio to 40%
-    elif user_info.health_goal == 'low_sodium':
+    elif user_info.health_goal == 'low sodium':
         sodium = 1500  # adjust sodium value to 1500mg
         potassium = 4700  # adjust potassium value to 4700mg (to balance sodium)
-    elif user_info.health_goal == 'low_cholesterol':
+    elif user_info.health_goal == 'low cholesterol':
         cholesterol = 300  # adjust cholesterol value to 300mg
-    elif user_info.health_goal == 'high_fiber':
+    elif user_info.health_goal == 'high-fiber':
         fiber = 25  # adjust fiber value to 25g
-    elif user_info.health_goal == 'low_sugar':
+    elif user_info.health_goal == 'low sugar':
         sugar = 20  # adjust sugar value to 20g
-    elif user_info.health_goal == 'low_fat':
+    elif user_info.health_goal == 'low fat':
         fat = (calories * 0.2) / 9  # adjust fat ratio to 20%
         carbs = (calories * 0.5) / 4
-    elif user_info.health_goal == 'keto_diet':
+    elif user_info.health_goal == 'keto diet':
         fat = (calories * 0.7) / 9  # adjust fat ratio to 70%
         protein = (calories * 0.2) / 4
         carbs = (calories * 0.1) / 4
