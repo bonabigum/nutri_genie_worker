@@ -10,9 +10,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Create virtual environment
+        run: python3 -m venv myenv
+
+      - name: Activate virtual environment
+        run: source myenv/bin/activate
+
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
+
       - name: Execute test_model.py
-        run: |
-          python test_model.py
+        run: python test_model.py
