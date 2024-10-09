@@ -53,7 +53,7 @@ def recommend(dataframe,_input,ingredients=[], allergies=[], params={'n_neighbor
         neigh = nn_predictor(prep_data)
         pipeline = build_pipeline(neigh, scaler, params)
         output = extracted_data.sample(n=5)
-        return output.sample(n=5, replace=False)
+        return output.sample(n=3, replace=False)
     else:
         return None
 
