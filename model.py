@@ -94,30 +94,30 @@ def calculate_nutrition_needs(user_info):
     fiber = 25
     sugar = 50
 
-    if user_info.health_goal == 'lose weight':
+    if user_info.health_goal == 'weight_loss':
         calories = bmr - 500
-    elif user_info.health_goal == 'gain weight':
+    elif user_info.health_goal == 'gain_weight':
         calories = bmr + 500
-    elif user_info.health_goal == 'maintain weight':
+    elif user_info.health_goal == 'maintain_weight':
         calories = bmr
-    elif user_info.health_goal == 'high-protein diet':
+    elif user_info.health_goal == 'high_protein_diet':
         protein_ratio = 0.4  # adjust protein ratio to 40%
         protein = (calories * protein_ratio) / 4
         fat = (calories * 0.2) / 9  # adjust fat ratio to 20%
         carbs = (calories * 0.4) / 4  # adjust carb ratio to 40%
-    elif user_info.health_goal == 'low sodium':
+    elif user_info.health_goal == 'low_sodium':
         sodium = 1500  # adjust sodium value to 1500mg
         potassium = 4700  # adjust potassium value to 4700mg (to balance sodium)
-    elif user_info.health_goal == 'low cholesterol':
+    elif user_info.health_goal == 'low_cholesterol':
         cholesterol = 300  # adjust cholesterol value to 300mg
     elif user_info.health_goal == 'high-fiber':
         fiber = 25  # adjust fiber value to 25g
-    elif user_info.health_goal == 'low sugar':
+    elif user_info.health_goal == 'low_sugar':
         sugar = 20  # adjust sugar value to 20g
-    elif user_info.health_goal == 'low fat':
+    elif user_info.health_goal == 'low_fat':
         fat = (calories * 0.2) / 9  # adjust fat ratio to 20%
         carbs = (calories * 0.5) / 4
-    elif user_info.health_goal == 'keto diet':
+    elif user_info.health_goal == 'keto_diet':
         fat = (calories * 0.7) / 9  # adjust fat ratio to 70%
         protein = (calories * 0.2) / 4
         carbs = (calories * 0.1) / 4
