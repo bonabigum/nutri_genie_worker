@@ -46,7 +46,7 @@ def apply_pipeline(pipeline,_input,extracted_data): #applying the pipeline for t
     _input=np.array(_input).reshape(1,-1)
     neighbor_indices = pipeline.transform(_input)[0]
     neighbor_index = random.randint(0, len(neighbor_indices) - 1)
-    return extracted_data.iloc[neighbor_index]
+    return extracted_data.iloc[[neighbor_index]]
 
 def recommend(dataframe, _input, ingredients, allergies, params):
     extracted_data = extract_data(dataframe, ingredients, allergies)
@@ -71,7 +71,10 @@ def extract_quoted_strings(s):
 
 def output_recommended_recipes(dataframe):
     if dataframe is not None:
-        output = dataframe.copy()
+        if isinstance(dataframe, pd.Series):  # If the input is a single row
+            output = dataframe.to_frame().T  # Convert it to a dataframe
+        else:
+            output = dataframe.copy()
         output['RecipeInstructions'] = output['RecipeInstructions'].astype(str)
         output = output.to_dict("records")
         for recipe in output:
