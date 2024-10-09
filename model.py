@@ -55,8 +55,10 @@ def recommend(dataframe, _input, ingredients, allergies, params):
         prep_data, scaler = scaling(extracted_data[numerical_cols])
         neigh = nn_predictor(prep_data)
         pipeline = build_pipeline(neigh, scaler, params)
-        output = apply_pipeline(pipeline, _input, extracted_data)
-        return output.sample(n=5, replace=True)
+        nearest_neighbors = pipeline.transform(_input)[0]
+        random_indices = np.random.choice(len(nearest_neighbors), size=5, replace=False)
+        output = extracted_data.iloc[random_indices]
+        return output
     else:
         return None
 
