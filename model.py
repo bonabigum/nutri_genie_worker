@@ -4,7 +4,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import FunctionTransformer
-import random
 
 #FOOR MAIN RECIPE
 def scaling(dataframe):
@@ -44,9 +43,7 @@ def extract_ingredient_filtered_data(dataframe, ingredients):
 
 def apply_pipeline(pipeline,_input,extracted_data): #applying the pipeline for the main recipe
     _input=np.array(_input).reshape(1,-1)
-    nearest_neighbors = pipeline.transform(_input)[0]
-    random_index = np.random.randint(0, len(nearest_neighbors))
-    return extracted_data.iloc[nearest_neighbors[random_index]]
+    return extracted_data.iloc[pipeline.transform(_input)[0]]
 
 def recommend(dataframe, _input, ingredients, allergies, params):
     extracted_data = extract_data(dataframe, ingredients, allergies)
@@ -55,10 +52,9 @@ def recommend(dataframe, _input, ingredients, allergies, params):
         prep_data, scaler = scaling(extracted_data[numerical_cols])
         neigh = nn_predictor(prep_data)
         pipeline = build_pipeline(neigh, scaler, params)
-        nearest_neighbors = pipeline.transform(_input)[0]
-        random_indices = np.random.choice(len(nearest_neighbors), size=5, replace=False)
-        output = extracted_data.iloc[random_indices]
-        return output
+        sampled_data = extracted_data.sample(n=100)
+        output = apply_pipeline(pipeline, _input, sampled_data)
+        return output.sample(n=5, replace=True)
     else:
         return None
 
