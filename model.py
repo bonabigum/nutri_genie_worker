@@ -52,11 +52,6 @@ def recommend(dataframe,_input,ingredients=[], allergies=[], params={'n_neighbor
         prep_data, scaler = scaling(extracted_data[numerical_cols])
         neigh = nn_predictor(prep_data)
         pipeline = build_pipeline(neigh, scaler, params)
-
-        if user_info and user_info.health_goal == 'weight_loss':
-            max_calories = calculate_nutrition_needs(user_info)[0]  # get the recommended daily calorie intake
-            extracted_data = extracted_data[extracted_data['Calories'] <= max_calories]
-        
         output = extracted_data.sample(n=5)
         return output.sample(n=3, replace=False)
     else:
