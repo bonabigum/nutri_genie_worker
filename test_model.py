@@ -100,6 +100,14 @@ else:
             data = response.json()
             total_serving_size = sum(item['serving_size_g'] for item in data['items'])
             serving_size_str = f'{total_serving_size:.2f}g'
+            if total_serving_size < 200:
+                serving_size_str = serving_size_str + "(1 serving (small))"
+            elif total_serving_size < 400:
+                serving_size_str = serving_size_str + "(1-2 servings (medium))"
+            elif total_serving_size < 600:
+                serving_size_str = serving_size_str + "(2-3 servings (large))"
+            else:
+                serving_size_str = serving_size_str + "(3 or more servings (extra large))"
         else:
             serving_size_str = "Serving size computation not found"
         priced_ingredients = []
@@ -134,25 +142,6 @@ else:
             'price': priced_ingredients_str
         }
         recommendations.append(recipe_dict)
-        '''recipe_details = [ #for list
-            i,
-            recipe['Name'],
-            recipe['Calories'],
-            recipe['FatContent'],
-            recipe['SaturatedFatContent'],
-            recipe['CholesterolContent'],
-            recipe['SodiumContent'],
-            recipe['CarbohydrateContent'],
-            recipe['FiberContent'],
-            recipe['SugarContent'],
-            recipe['ProteinContent'],
-            recipe['Image'],
-            ingredients_str,
-            recipe_instructions_str,
-            #serving_size_str,
-            priced_ingredients_str
-        ]
-        recommendations.append(recipe_details)'''
 print(recommendations)
 
 
