@@ -52,7 +52,7 @@ def recommend(dataframe, _input, ingredients, allergies, params):
         prep_data, scaler = scaling(extracted_data[numerical_cols])
         neigh = nn_predictor(prep_data)
         pipeline = build_pipeline(neigh, scaler, params)
-        sampled_data = extracted_data.sample(n=100)
+        sampled_data = extracted_data.sample(n=5)
         output = apply_pipeline(pipeline, _input, sampled_data)
         return output.sample(n=5, replace=True)
     else:
