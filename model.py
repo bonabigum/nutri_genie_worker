@@ -52,9 +52,8 @@ def recommend(dataframe,_input,ingredients=[], allergies=[], params={'n_neighbor
         prep_data, scaler = scaling(extracted_data[numerical_cols])
         neigh = nn_predictor(prep_data)
         pipeline = build_pipeline(neigh, scaler, params)
-        output = extracted_data.sample(n=10)  # Sample more rows to increase chances of getting 5 unique rows
-        output = output.drop_duplicates()  # Remove duplicates
-        return output.sample(n=min(5, output.shape[0]))  # Sample up to 5 unique rows
+        output = extracted_data.sample(n=5)
+        return output.sample(n=1, replace=True)
     else:
         return None
 
