@@ -25,123 +25,673 @@
     "Price": 47
   },
   {
-    "Name": "Pork Ham",
-    "Unit": "1kg",
-        "Price": 320
-      },
-      {
-        "Name": "Pork Belly",
-        "Unit": "1kg",
-        "Price": 320
-      },
-      {
-        "Name": "Whole Chicken",
-        "Unit": "1kg",
-        "Price": 200
-      },
-      {
-        "Name": "Cabbage",
-        "Unit": "1KG",
-        "Price": 80
-      },
-      {
-        "Name": "Carrots",
-        "Unit": "1kg",
-        "Price": 100
-      },
-      {
-        "Name": "Habitchuelas (Baguio Beans) Cabbage",
-        "Unit": "1kg",
-        "Price": 80
-      },
-      {
-        "Name": "Potato",
-        "Unit": "1kg",
-        "Price": 100
-      },
-      {
-        "Name": "Pechay (Baguio)",
-        "Unit": "1kg",
-        "Price": 240
-      },
-      {
-        "Name": "Chayote",
-        "Unit": "1kg",
-        "Price": 40
-      },
-      {
-        "Name": "Garlic",
-        "Unit": "1kg",
-        "Price": 140
-      },
-      {
-        "Name": "Ginger",
-        "Unit": "1kg",
-        "Price": 200
-      },
-      {
-        "Name": "Red Onion",
-        "Unit": "1kg",
-        "Price": 100
-      },
-      {
-        "Name": "White Onion",
-        "Unit": "1kg",
-        "Price": 140
-      },
-      {
-        "Name": "Chili (Labuyo)",
-        "Unit": "1kg",
-        "Price": 360
-      },
-      {
-        "Name": "Alumahan",
-        "Unit": "1kg",
-        "Price": 200
-      },
-      {
-        "Name": "Bangus",
-        "Unit": "1kg",
-        "Price": 180
-      },
-      {
-        "Name": "Galunggong(Local)",
-        "Unit": "1kg",
-        "Price": 160
-      },
-      {
-        "Name": "Tilapia",
-        "Unit": "1kg",
-        "Price": 150
-      },
-      {
-        "Name": "Calamansi",
-        "Unit": "1kg",
-        "Price": 40
-      },
-      {
-        "Name": "Banana (Lakatan)",
-        "Unit": "1kg",
-        "Price": 120
-      },
-      {
-        "Name": "Banana (Latundan)",
-        "Unit": "1kg",
-        "Price": 60
-      },
-      {
-        "Name": "Mangos",
-        "Unit": "1kg",
-        "Price": 300
-      },
-      {
-        "Name": "Chicken Egg (White, Medium)",
-        "Unit": "1 piece",
-        "Price": 9
-      },
-      {
-        "Name": "Papaya",
-        "Unit": "2 piece",
-        "Price": 30
-      }
+  "Name": "Pork Ham",
+  "Unit": "1kg",
+  "Price": 320
+  },
+  {
+  "Name": "Pork Belly",
+  "Unit": "1kg",
+  "Price": 320
+  },
+  {
+  "Name": "Whole Chicken",
+  "Unit": "1kg",
+  "Price": 200
+  },
+  {
+  "Name": "Cabbage",
+  "Unit": "1KG",
+  "Price": 80
+  },
+  {
+  "Name": "Carrots",
+  "Unit": "1kg",
+  "Price": 100
+  },
+  {
+  "Name": "Habitchuelas (Baguio Beans) Cabbage",
+  "Unit": "1kg",
+  "Price": 80
+  },
+  {
+  "Name": "Potato",
+  "Unit": "1kg",
+  "Price": 100
+  },
+  {
+  "Name": "Pechay (Baguio)",
+  "Unit": "1kg",
+  "Price": 240
+  },
+  {
+  "Name": "Chayote",
+  "Unit": "1kg",
+  "Price": 40
+  },
+  {
+  "Name": "Garlic",
+  "Unit": "1kg",
+  "Price": 140
+  },
+  {
+  "Name": "Ginger",
+  "Unit": "1kg",
+  "Price": 200
+  },
+  {
+  "Name": "Red Onion",
+  "Unit": "1kg",
+  "Price": 100
+  },
+  {
+  "Name": "White Onion",
+  "Unit": "1kg",
+  "Price": 140
+  },
+  {
+  "Name": "Chili (Labuyo)",
+  "Unit": "1kg",
+  "Price": 360
+  },
+  {
+  "Name": "Alumahan",
+  "Unit": "1kg",
+  "Price": 200
+  },
+  {
+  "Name": "Bangus",
+  "Unit": "1kg",
+  "Price": 180
+  },
+  {
+  "Name": "Galunggong(Local)",
+  "Unit": "1kg",
+  "Price": 160
+  },
+  {
+  "Name": "Tilapia",
+  "Unit": "1kg",
+  "Price": 150
+  },
+  {
+  "Name": "Calamansi",
+  "Unit": "1kg",
+  "Price": 40
+  },
+  {
+  "Name": "Banana Lakatan",
+  "Unit": "1kg",
+  "Price": 120
+  },
+  {
+  "Name": "Banana Latundan",
+  "Unit": "1kg",
+  "Price": 60
+  },
+  {
+  "Name": "Mangos",
+  "Unit": "1kg",
+  "Price": 300
+  },
+  {
+  "Name": "Chicken Egg",
+  "Unit": "1 piece",
+  "Price": 9
+  },
+  {
+  "Name": "Papaya",
+  "Unit": "2 piece",
+  "Price": 30
+  },
+  {
+  "Name": "Family's Budget Pack Plain",
+  "Unit": "130g",
+  "Price": 15.25
+  },
+  {
+  "Name": "Young's town bonus",
+  "Unit": "155g",
+  "Price": 13.25
+  },
+  {
+  "Name": "Hakone regular lid",
+  "Unit": "155g",
+  "Price": 13.40
+  },
+  {
+  "Name": "Saba Phil Sardines -NCR",
+  "Unit": "155g",
+  "Price": 17.25
+  },
+  {
+  "Name": "Atami Regular lid",
+  "Unit": "155g",
+  "Price": 17.77
+  },
+  {
+  "Name": "Saba Phil. Sardines -Luzon/Viz/MIn",
+  "Unit": "155g",
+  "Price": 17.50
+  },
+  {
+  "Name": "Mikado regular lid",
+  "Unit": "155g",
+  "Price": 17.77
+  },
+  {
+  "Name": "King cup regular lid",
+  "Unit": "155g",
+  "Price": 18
+  },
+  {
+  "Name": "Mariko regular lid",
+  "Unit": "155g",
+  "Price": 18
+  },
+  {
+  "Name": "Sallena regular lid",
+  "Unit": "155g",
+  "Price": 18.50
+  },
+  {
+  "Name": "Atami EOC",
+  "Unit": "155g",
+  "Price": 18.56
+  },
+  {
+  "Name": "Mikado EOC",
+  "Unit": "155g",
+  "Price": 18.56
+  },
+  {
+  "Name": "Tokyo regular lid",
+  "Unit": "155g",
+  "Price": 18.72
+  },
+  {
+  "Name": "555 bonus pack",
+  "Unit": "155g",
+  "Price": 18.75
+  },
+  {
+  "Name": "Lucky 7",
+  "Unit": "155g",
+  "Price": 18.75
+  },
+  {
+  "Name": "Toyo EOC",
+  "Unit": "155g",
+  "Price": 19.58
+  },
+  {
+  "Name": "Jersey Sweetened Condensed creamer",
+  "Unit": "390g",
+  "Price": 42
+  },
+  {
+  "Name": "Alaska condensada",
+  "Unit": "168mL",
+  "Price": 33.50
+  },
+  {
+  "Name": "Liberty condensada",
+  "Unit": "168mL",
+  "Price": 34.75
+  },
+  {
+  "Name": "Cow Bell condensada",
+  "Unit": "300mL",
+  "Price": 41
+  },
+  {
+  "Name": "Angel filled milk",
+  "Unit": "410mL",
+  "Price": 44
+  },
+  {
+  "Name": "Cow bell evaporada",
+  "Unit": "370mL",
+  "Price": 28.50
+  },
+  {
+  "Name": "Alaska evaporada",
+  "Unit": "370mL",
+  "Price": 31.56
+  },
+  {
+  "Name": "Bear brand",
+  "Unit": "135g",
+  "Price": 50
+  },
+  {
+  "Name": "Birch tree full cream milk",
+  "Unit": "150g",
+  "Price": 64.75
+  },
+  {
+  "Name": "Anchor full cream milk",
+  "Unit": "150g",
+  "Price": 73.30
+  },
+  {
+  "Name": "Alaska fortified powdered milk drink",
+  "Unit": "165g",
+  "Price": 44
+  },
+  {
+  "Name": "Jersey fortified instant powdered milk drink",
+  "Unit": "300g",
+  "Price": 96.25
+  },
+  {
+  "Name": "Nescafe classic",
+  "Unit": "23g",
+  "Price": 20
+  },
+  {
+  "Name": "Blend 45 - Supermarker",
+  "Unit": "25g",
+  "Price": 18.50
+  },
+  {
+  "Name": "Great taste (premium) SMKT",
+  "Unit": "25g",
+  "Price": 19.75
+  },
+  {
+  "Name": "Great taste (granules) SMKT",
+  "Unit": "25g",
+  "Price": 21
+  },
+  {
+  "Name": "Nescafe classic",
+  "Unit": "46g",
+  "Price": 40
+  },
+  {
+  "Name": "Great taste (premium) SMKT",
+  "Unit": "50g",
+  "Price": 38.50
+  },
+  {
+  "Name": "Great taste (granules) SMKT",
+  "Unit": "50g",
+  "Price": 41
+  },
+  {
+  "Name": "Cafe Puro",
+  "Unit": "17g",
+  "Price": 4.70
+  },
+  {
+  "Name": "Blend 45",
+  "Unit": "18g",
+  "Price": 4.10
+  },
+  {
+  "Name": "San Mig Coffee 3-in-1 Original",
+  "Unit": "20g",
+  "Price": 6.50
+  },
+  {
+  "Name": "Nescafe Original",
+  "Unit": "28g",
+  "Price": 7.25
+  },
+  {
+  "Name": "Kopiko Black",
+  "Unit": "30g",
+  "Price": 8
+  },
+  {
+  "Name": "Great taste original twin pack",
+  "Unit": "33g",
+  "Price": 8.25
+  },
+  {
+  "Name": "Pinoy pandesal (10pcs/pack)",
+  "Unit": "250g",
+  "Price": 25
+  },
+  {
+  "Name": "Pinoy tasty",
+  "Unit": "450g",
+  "Price": 40.50
+  },
+  {
+  "Name": "Payless (Instant Mami Chicken and instant mami beef)",
+  "Unit": "55g",
+  "Price": 7
+  },
+  {
+  "Name": "Quick Chow (Instant Mami Beef and Instant Mami Chicken)",
+  "Unit": "55g",
+  "Price": 7.25
+  },
+  {
+  "Name": "Ho-Mi (Instant Mami Chicken & Garlic, Instant Mami Beef Brisket)",
+  "Unit": "55g",
+  "Price": 8.40
+  },
+  {
+  "Name": "Lucky Me! (Instant Mami CHicken na Chicken and Instant Mami Beef na Beef)",
+  "Unit": "55g",
+  "Price": 8.75
+  },
+  {
+  "Name": "Lasap Rock Salt",
+  "Unit": "250g",
+  "Price": 7
+  },
+  {
+  "Name": "Fidel Coarse (Red) - Luzon",
+  "Unit": "250g",
+  "Price": 11
+  },
+  {
+  "Name": "Fidel Coarse (Red) - Visayas & Mindanao",
+  "Unit": "250g",
+  "Price": 11.75
+  },
+  {
+  "Name": "Fidel refined (blue) - Luzon",
+  "Unit": "250g",
+  "Price": 12.75
+  },
+  {
+  "Name": "Fidel refined (blue) - Visayas & Mindanao",
+  "Unit": "250g",
+  "Price": 12.25
+  },
+  {
+  "Name": "Fidel free flowing (green) - Luzon",
+  "Unit": "250g",
+  "Price": 12.75
+  },
+  {
+  "Name": "Fidel free flowing (green) - Visayas & Mindanao",
+  "Unit": "250g",
+  "Price": 13.50
+  },
+  {
+  "Name": "SM Bonus",
+  "Unit": "325mL",
+  "Price": 6
+  },
+  {
+  "Name": "Wilkins",
+  "Unit": "330mL",
+  "Price": 12
+  },
+  {
+  "Name": "Absolute",
+  "Unit": "350mL",
+  "Price": 12
+  },
+  {
+  "Name": "Magnolia pure",
+  "Unit": "355mL",
+  "Price": 8.50
+  },
+  {
+  "Name": "Natures Spring",
+  "Unit": "500mL",
+  "Price": 9.90
+  },
+  {
+  "Name": "Wilkins Pure",
+  "Unit": "500mL",
+  "Price": 11
+  },
+  {
+  "Name": "Supersavers Nature's Pure",
+  "Unit": "330mL",
+  "Price": 7.15
+  },
+  {
+  "Name": "Hidden Spring",
+  "Unit": "330mL",
+  "Price": 8.80
+  },
+  {
+  "Name": "Viva - Nationwide",
+  "Unit": "330mL",
+  "Price": 10
+  },
+  {
+  "Name": "Summit",
+  "Unit": "350mL",
+  "Price": 11
+  },
+  {
+  "Name": "Supersavers Nature's Pure",
+  "Unit": "500mL",
+  "Price": 8.70
+  },
+  {
+  "Name": "Robinsons Mall",
+  "Unit": "500mL",
+  "Price": 10.45
+  },
+  {
+  "Name": "Hidden Spring",
+  "Unit": "500mL",
+  "Price": 12.10
+  },
+  {
+  "Name": "Viva - Nationwide",
+  "Unit": "500mL",
+  "Price": 13
+  },
+  {
+  "Name": "Summit",
+  "Unit": "500mL",
+  "Price": 14.50
+  },
+  {
+  "Name": "Purefoods Chinese Style",
+  "Unit": "165g",
+  "Price": 33.50
+  },
+  {
+  "Name": "CDO Chinese Style",
+  "Unit": "165g",
+  "Price": 39
+  },
+  {
+  "Name": "Gusto",
+  "Unit": "150g",
+  "Price": 16.50
+  },
+  {
+  "Name": "Winner - Supermarket (SMKT)",
+  "Unit": "150g",
+  "Price": 18
+  },
+  {
+  "Name": "555 meatloaf",
+  "Unit": "150g",
+  "Price": 19.50
+  },
+  {
+  "Name": "CDO meatloaf",
+  "Unit": "150g",
+  "Price": 20.75
+  },
+  {
+  "Name": "Argentina meatloaf",
+  "Unit": "150m",
+  "Price": 23.75
+  },
+  {
+  "Name": "Bingo",
+  "Unit": "150g",
+  "Price": 22
+  },
+  {
+  "Name": "El Rancho - SMKT",
+  "Unit": "150g",
+  "Price": 28.50
+  },
+  {
+  "Name": "Winner - SMKT",
+  "Unit": "150g",
+  "Price": 30.75
+  },
+  {
+  "Name": "Star Corned beef",
+  "Unit": "150g",
+  "Price": 34
+  },
+  {
+  "Name": "Young's town premium",
+  "Unit": "150g",
+  "Price": 34.25
+  },
+  {
+  "Name": "Argentina cornbeef",
+  "Unit": "150g",
+  "Price": 35.75
+  },
+  {
+  "Name": "Ligo Premium",
+  "Unit": "175g",
+  "Price": 35.80
+  },
+  {
+  "Name": "Ligo VizMin",
+  "Unit": "175g",
+  "Price": 36.20
+  },
+  {
+  "Name": "Purefoods beef loaf",
+  "Unit": "150g",
+  "Price": 18.15
+  },
+  {
+  "Name": "Bingo beef loaf",
+  "Unit": "150g",
+  "Price": 18.50
+  },
+  {
+  "Name": "555 beef loaf",
+  "Unit": "150g",
+  "Price": 19.50
+  },
+  {
+  "Name": "CDO beef loaf",
+  "Unit": "150g",
+  "Price": 20.75
+  },
+  {
+  "Name": "Argentina beef loaf",
+  "Unit": "150g",
+  "Price": 22
+  },
+  {
+  "Name": "El Rancho - SMKT",
+  "Unit": "155g",
+  "Price": 17.75
+  },
+  {
+  "Name": "Amihan Cane - SMKT",
+  "Unit": "350mL",
+  "Price": 10.40
+  },
+  {
+  "Name": "Amihan Cane - Wetmarket (WMKT)",
+  "Unit": "350mL",
+  "Price": 11
+  },
+  {
+  "Name": "Datu Puti - White Vinegar",
+  "Unit": "350mL",
+  "Price": 17.50
+  },
+  {
+  "Name": "Silver Swan Sukang Puti",
+  "Unit": "350mL",
+  "Price": 17.50
+  },
+  {
+  "Name": "Datu Puti - White Vinegar - WMKT",
+  "Unit": "350mL",
+  "Price": 18.03
+  },
+  {
+  "Name": "Silver Swan Sukang Puti Doy Pack - SMKT",
+  "Unit": "200ml",
+  "Price": 7.90
+  },
+  {
+  "Name": "Silver Swan Sukang Puti Doy PAck - WMKT",
+  "Unit": "200ml",
+  "Price": 7.95
+  },
+  {
+  "Name": "Lorins PET Bottle",
+  "Unit": "350ml",
+  "Price": 23.25
+  },
+  {
+  "Name": "Silver Swan Special",
+  "Unit": "350ml",
+  "Price": 23.75
+  },
+  {
+  "Name": "Datu Puti - SMKT",
+  "Unit": "350ml",
+  "Price": 26.25
+  },
+  {
+  "Name": "Datu Puti",
+  "Unit": "350ml",
+  "Price": 27.55
+  },
+  {
+  "Name": "Nelicom Special",
+  "Unit": "350ml",
+  "Price": 29.70
+  },
+  {
+  "Name": "Nelicom Special - WMKT",
+  "Unit": "350ml",
+  "Price": 31.25
+  },
+  {
+  "Name": "Lorins - Pouch patis",
+  "Unit": "150ml",
+  "Price": 11.50
+  },
+  {
+  "Name": "Lorins - Budget Pouch patis",
+  "Unit": "350ml",
+  "Price": 21.25
+  },
+  {
+  "Name": "Datu Puti soy sauce - SMKT",
+  "Unit": "350ml",
+  "Price": 19.10
+  },
+  {
+  "Name": "Datu Puti soy sauce",
+  "Unit": "350ml",
+  "Price": 20.10
+  },
+  {
+  "Name": "Silver swan soy sauce",
+  "Unit": "350ml",
+  "Price": 20.25
+  },
+  {
+  "Name": "Silver Swan Doy Pack - SMKT",
+  "Unit": "200ml",
+  "Price": 10.65
+  },
+  {
+  "Name": "Silver Swan Doy Pack",
+  "Unit": "200ml",
+  "Price": 10.92
+  }
 ]
