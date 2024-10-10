@@ -101,13 +101,13 @@ else:
             total_serving_size = sum(item['serving_size_g'] for item in data['items'])
             serving_size_str = f'{total_serving_size:.2f}g'
             if total_serving_size < 200:
-                serving_size_str = serving_size_str + "(1 serving (small))"
+                serving_size_str = serving_size_str + " (Estimation: 1 serving (small))"
             elif total_serving_size < 400:
-                serving_size_str = serving_size_str + "(1-2 servings (medium))"
+                serving_size_str = serving_size_str + " (Estimation: 1-2 servings (medium))"
             elif total_serving_size < 600:
-                serving_size_str = serving_size_str + "(2-3 servings (large))"
+                serving_size_str = serving_size_str + " (Estimation: 2-3 servings (large))"
             else:
-                serving_size_str = serving_size_str + "(3 or more servings (extra large))"
+                serving_size_str = serving_size_str + " (Estimation: 3 or more servings (extra large))"
         else:
             serving_size_str = "Serving size computation not found"
         priced_ingredients = []
