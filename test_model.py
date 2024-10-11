@@ -12,6 +12,7 @@ height1 = None
 weight1 = None
 health_goal1 = None
 allergies1 =[]
+savedRecipes1=[]
 def get_allergy_items(allergy_names):
     with open('allergens.json') as f:
         allergens_data = json.load(f)
@@ -38,11 +39,13 @@ def test_get_user_id():
             health_goal1 = data['user_info']['health_goal']
             allergy_names = data['allergy_names']
             allergies1 = get_allergy_items(allergy_names)
+            savedRecipes1 = data['savedRecipes']
         else:
             print(f"Error: {response.status_code}")
     except requests.exceptions.RequestException as e:
         print(f"Error fetching data: {e}")
 test_get_user_id()
+print(savedRecipes1)
 # sample user
 user_info = UserInfo(
     age=age1,
