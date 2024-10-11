@@ -60,6 +60,7 @@ prediction_input = PredictionIn( #prediction input
     user_info=user_info,
     #allergies=['chicken'],
     allergies = allergies1[:],
+    saved_recipes = savedRecipes1[:],
     params=params(n_neighbors=3, return_distance=False) # gives how many recipes to recommend
 )
 
@@ -72,6 +73,7 @@ recommendation_dataframe = recommend(
     nutrition_input,
     prediction_input.ingredients,
     prediction_input.allergies,
+    prediction_input.saved_recipes,
     prediction_input.params.dict()
 )
 output = output_recommended_recipes(recommendation_dataframe)
