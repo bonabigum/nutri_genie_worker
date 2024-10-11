@@ -8,20 +8,36 @@
         ]
       },
       {"name": "Nuts","items": [
-          "Peanuts","Tree Nuts","Almonds","Walnuts","Pecans"
+          "Peanuts","Tree Nuts","Almonds","Walnuts","Pecans", "Peanut butter"
         ]
       },
       {"name": "Fish","items": [
-          "Salmon","Tuna","Cod","Swordfish","Anchovies"
+          "Salmon","Tuna","Cod","Swordfish","Anchovies", "Bangus", "Tilapia", "fish sauce", "patis", "dilis", "tuyo", "lapu lapu", "lapu-lapu", "lapulapu", "tamban", "maya maya", "hasahasa", "galunggong", "tonigue", "apahap", "dalagang bukid"
         ]
+      },
+      {"name": "Seafoods","items": [
+        "Salmon","Tuna","Cod","Swordfish","Anchovies", "Bangus", "Tilapia", "fish sauce", "patis", "shrimp", "prawn", "crabs", "lobster", "crayfish", "clam", "dilis", "tuyo", "lapu lapu", "lapu-lapu", "lapulapu", "tamban", "maya maya", "hasahasa", "galunggong", "tonigue", "apahap", "dalagang bukid"
+      ]
+      },
+      {"name": "Seafood","items": [
+        "Salmon","Tuna","Cod","Swordfish","Anchovies", "Bangus", "Tilapia", "fish sauce", "patis", "shrimp", "prawn", "crabs", "lobster", "crayfish", "clam", "dilis", "tuyo", "lapu lapu", "lapu-lapu", "lapulapu", "tamban", "maya maya", "hasahasa", "galunggong", "tonigue", "apahap", "dalagang bukid"
+      ]
       },
       {"name": "Eggs","items": [
-          "Chicken Eggs","Duck Eggs","Quail Eggs"
+          "Chicken Egg","Duck Egg","Quail Egg", "Balut"
         ]
       },
+      {"name": "Egg","items": [
+        "Chicken Egg","Duck Egg","Quail Egg", "Balut"
+      ]
+      },
       {"name": "Wheat","items": [
-          "Bread","Pasta","Cereals","Cakes","Cookies"
+          "Bread","Pasta","Cereals","Cakes","Cookies", "flour", "Wheat bread", "Grain bread"
         ]
+      },
+      {"name": "Gluten","items": [
+        "Bread","Pasta","Cereals","Cakes","Cookies", "flour"
+      ]
       },
       {"name": "Soy", "items": [
           "Soybeans","Tofu","Edamame","Miso","Soy Sauce"
