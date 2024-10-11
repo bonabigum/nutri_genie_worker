@@ -27,7 +27,7 @@ def extract_data(dataframe, ingredients, allergies, saved_recipe): #extracting t
     extracted_data = dataframe.copy()
     extracted_data = extract_ingredient_filtered_data(extracted_data, ingredients)
     extracted_data = filter_out_allergies(extracted_data, allergies)
-    extracted_data = filter_out_saved_recipes(extracted_data, saved_recipes)
+    extracted_data = filter_out_saved_recipe(extracted_data, saved_recipe)
     return extracted_data
 
 def filter_out_allergies(dataframe, allergies): #filtering out the allergies
@@ -36,10 +36,10 @@ def filter_out_allergies(dataframe, allergies): #filtering out the allergies
     allergy_pattern = '|'.join(allergies)
     return dataframe[~dataframe['RecipeIngredientParts'].str.contains(allergy_pattern, case=False, regex=True)]
 
-def filter_out_saved_recipes(dataframe, saved_recipes): 
-    if not saved_recipes:
+def filter_out_saved_recipe(dataframe, saved_recipe): 
+    if not saved_recipe:
         return dataframe
-    return dataframe[~dataframe['Name'].isin(saved_recipes)]
+    return dataframe[~dataframe['Name'].isin(saved_recipe)]
 
 def extract_ingredient_filtered_data(dataframe, ingredients):
     extracted_data=dataframe.copy()
@@ -51,8 +51,8 @@ def apply_pipeline(pipeline,_input,extracted_data): #applying the pipeline for t
     _input=np.array(_input).reshape(1,-1)
     return extracted_data.iloc[pipeline.transform(_input)[0]]
 
-def recommend(dataframe,_input,ingredients=[], allergies=[],saved_recipes=[], params={'n_neighbors':3, 'return_distance':False}):
-    extracted_data = extract_data(dataframe, ingredients, allergies, saved_recipes)
+def recommend(dataframe,_input,ingredients=[], allergies=[],saved_recipe=[], params={'n_neighbors':3, 'return_distance':False}):
+    extracted_data = extract_data(dataframe, ingredients, allergies, saved_recipe)
     if extracted_data.shape[0] >= params['n_neighbors']:
         numerical_cols = extracted_data.select_dtypes(include=['int64', 'float64']).columns
         prep_data, scaler = scaling(extracted_data[numerical_cols])
