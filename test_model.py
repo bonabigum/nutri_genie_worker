@@ -40,6 +40,7 @@ def test_get_user_id():
             allergy_names = data['allergy_names']
             allergies1 = get_allergy_items(allergy_names)
             savedRecipes1 = [recipe[0] for recipe in data['savedRecipes']]
+            print(data['savedRecipes])
         else:
             print(f"Error: {response.status_code}")
     except requests.exceptions.RequestException as e:
