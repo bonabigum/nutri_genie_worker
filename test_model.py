@@ -31,7 +31,7 @@ def test_get_user_id():
         response.raise_for_status()
         if response.status_code == 200:
             data = response.json()
-            global age1, gender1, height1, weight1, health_goal1, allergies1
+            global age1, gender1, height1, weight1, health_goal1, allergies1, savedRecipes1
             age1 = data['user_info']['age'] #setting variables into its values
             gender1 = data['user_info']['gender']
             height1 = data['user_info']['height']
