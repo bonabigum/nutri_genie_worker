@@ -26,6 +26,7 @@ class PredictionIn(BaseModel): #defines the input structure for predictions, inc
     user_info: UserInfo #TESTING PURPOSES
     ingredients:list[str]=[]
     allergies:list[str]=[]
+    saved_recipes:list[str]=[]
     params:Optional[params]
 
 class Recipe(BaseModel): #structure of recipe and nutritional info
@@ -60,6 +61,7 @@ def update_item(prediction_input:PredictionIn):
         nutrition_input,
         prediction_input.ingredients,
         prediction_input.allergies,
+        prediction_input.saved_recipes,
         prediction_input.params.dict()
     )
     output = output_recommended_recipes(recommendation_dataframe)
