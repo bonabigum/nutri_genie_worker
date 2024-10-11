@@ -45,7 +45,7 @@ def test_get_user_id():
     except requests.exceptions.RequestException as e:
         print(f"Error fetching data: {e}")
 test_get_user_id()
-print(savedRecipes1)
+print('saved recipes:',savedRecipes1)
 # sample user
 user_info = UserInfo(
     age=age1,
