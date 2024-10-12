@@ -12,15 +12,15 @@
         ]
       },
       {"name": "Fish","items": [
-          "Salmon","Tuna","Cod","Swordfish","Anchovies", "Bangus", "Tilapia", "fish sauce", "patis", "dilis", "tuyo", "lapu lapu", "lapu-lapu", "lapulapu", "tamban", "maya maya", "hasahasa", "galunggong", "tonigue", "apahap", "dalagang bukid"
+          "Salmon","Tuna","Cod","Swordfish","Anchovies", "Bangus", "Tilapia", "fish sauce", "patis", "dilis", "tuyo", "lapu lapu", "lapu-lapu", "lapulapu", "tamban", "maya maya", "hasahasa", "galunggong", "tonigue", "apahap", "dalagang bukid", "milkfish"
         ]
       },
       {"name": "Seafoods","items": [
-        "Salmon","Tuna","Cod","Swordfish","Anchovies", "Bangus", "Tilapia", "fish sauce", "patis", "shrimp", "prawn", "crabs", "lobster", "crayfish", "clam", "dilis", "tuyo", "lapu lapu", "lapu-lapu", "lapulapu", "tamban", "maya maya", "hasahasa", "galunggong", "tonigue", "apahap", "dalagang bukid"
+        "Salmon","Tuna","Cod","Swordfish","Anchovies", "Bangus", "Tilapia", "fish sauce", "patis", "shrimp", "prawn", "crabs", "lobster", "crayfish", "clam", "dilis", "tuyo", "lapu lapu", "lapu-lapu", "lapulapu", "tamban", "maya maya", "hasahasa", "galunggong", "tonigue", "apahap", "dalagang bukid", "milkfish"
       ]
       },
       {"name": "Seafood","items": [
-        "Salmon","Tuna","Cod","Swordfish","Anchovies", "Bangus", "Tilapia", "fish sauce", "patis", "shrimp", "prawn", "crabs", "lobster", "crayfish", "clam", "dilis", "tuyo", "lapu lapu", "lapu-lapu", "lapulapu", "tamban", "maya maya", "hasahasa", "galunggong", "tonigue", "apahap", "dalagang bukid"
+        "Salmon","Tuna","Cod","Swordfish","Anchovies", "Bangus", "Tilapia", "fish sauce", "patis", "shrimp", "prawn", "crabs", "lobster", "crayfish", "clam", "dilis", "tuyo", "lapu lapu", "lapu-lapu", "lapulapu", "tamban", "maya maya", "hasahasa", "galunggong", "tonigue", "apahap", "dalagang bukid", "milkfish"
       ]
       },
       {"name": "Eggs","items": [
@@ -36,7 +36,7 @@
         ]
       },
       {"name": "Gluten","items": [
-        "Bread","Pasta","Cereals","Cakes","Cookies", "flour"
+        "Bread","Pasta","Cereals","Cakes","Cookies", "flour", "bread slices"
       ]
       },
       {"name": "Soy", "items": [
